@@ -1,0 +1,48 @@
+body{
+    background-color: black;
+}
+h1{
+    color: white;
+    text-align: center;
+}
+
+.flexcontainer{
+    display: flex;
+    justify-content:space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+.child{
+    background-color: aqua;
+    width: 200px;
+    height: 200px;
+    margin-top: 200px ;
+    border-radius: 5px 100px 5px;
+    box-shadow: 5px 10px rgb(242, 245, 245);
+    
+}
+.child:hover{
+cursor: pointer;
+transition-duration: 1s;
+transition-timing-function: ease-in-out;
+animation-name: saravanan;
+animation-duration: 2s;
+}
+
+
+@keyframes saravanan {
+   0%{
+    transform: rotate(0deg);
+}
+   25%{
+    transform: rotate(360deg);
+}
+75%{
+    transform: rotate(360deg);
+}
+100%{
+    transform: rotate(0deg);
+}
+    
+}
